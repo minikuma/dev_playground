@@ -94,6 +94,3 @@ gradle-app.setting
 
 # Cache of project
 .gradletasknamecache
-
-# tomcat class 파일 경로 제외
-webapps
