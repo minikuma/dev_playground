@@ -1,6 +1,8 @@
 package me.minikuma.mvc;
 
 import me.minikuma.mvc.controller.Controller;
+import me.minikuma.mvc.controller.MyRequestCondition;
+import me.minikuma.mvc.controller.MyRequestMethod;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -27,7 +29,7 @@ public class DispatcherServlet extends HttpServlet {
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         log.info("[service] Invoke Dispatcher Servlet");
 
-        Controller findController = this.requestMapping.findHandler(request.getRequestURI());
+        Controller findController = this.requestMapping.findHandler(new MyRequestCondition(MyRequestMethod.valueOf(request.getMethod()), request.getRequestURI()));
         log.info("[service] find controller : {}", findController);
 
         try {

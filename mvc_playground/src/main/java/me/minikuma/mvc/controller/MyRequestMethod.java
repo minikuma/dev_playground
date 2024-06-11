@@ -1,2 +1,5 @@
-package me.minikuma.mvc.controller;public class MyRequestMethod {
+package me.minikuma.mvc.controller;
+
+public enum MyRequestMethod {
+    GET, POST, PUT, DELETE;
 }
