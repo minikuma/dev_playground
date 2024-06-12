@@ -9,6 +9,6 @@ import javax.servlet.http.HttpServletResponse;
 public class WelcomeController implements Controller {
     @Override
     public String handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
-        return "welcome.jsp";
+        return "welcome";
     }
 }

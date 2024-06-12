@@ -1,4 +1,4 @@
-package me.minikuma.mvc.controller;
+package me.minikuma.mvc.common;
 
 import java.util.Objects;
 

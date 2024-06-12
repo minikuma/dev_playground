@@ -6,5 +6,7 @@
 - [ ] MVC 구현
   - [x] `DispatchServlet`: 모든 URI 호출을 받는다.
   - [x] `RequestMapping`: 유입된 URI 기준으로 어떤 Controller 로 보낼 지 결정
+  - [x] `View`
+  - [x] `ViewResolver`
 
 
